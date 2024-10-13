@@ -15,13 +15,13 @@ const FeaturedJobs = () => {
         <div className="flex justify-center gap-10 mt-10">
 
             {/* First box in job features */}
-            <div className="bg-blue-100 w-auto h-auto p-3 border border-gray-400 rounded-lg">
+            <div className="bg-setted w-auto h-auto p-3 rounded-lg">
                 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Technical Support Specialist</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
-                <p className="mr-8"><span className="bg-green-300 rounded text-green-700 font-semibold p-1">PART-TIME</span> <span className="text-gray-400">Salary: 20,000 INR - 25,00 INR</span></p>     
+                <p className="mr-8"><span className="bg-green-100 rounded text-green-700 font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 20,000 INR - 25,00 INR</span></p>     
                 
 
             <div className="flex items-center mt-8">
@@ -61,14 +61,14 @@ const FeaturedJobs = () => {
 
 
                 {/* The second box of job features */}      
-            <div className="bg-blue-100 w-auto h-auto border border-gray-400 rounded-lg p-3">
+            <div className="bg-setted w-auto h-auto border rounded-lg p-3">
 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Senior UI/UX Designer</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-300 rounded text-primary font-semibold p-1">PART-TIME</span> <span className="text-gray-400">Salary: $30,000 - $55,000</span></p>     
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">FULL-TIME</span> <span className="text-gray-400">Salary: $30,000 - $55,000</span></p>     
                 
 
                
@@ -108,14 +108,14 @@ const FeaturedJobs = () => {
 
 
             {/* Third box of job features */}
-            <div className="bg-blue-100 w-auto h-auto p-3 border border-gray-400 rounded-lg">
+            <div className="bg-setted w-auto h-auto p-3 rounded-lg">
 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Marketing Officer</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-300 rounded text-primary font-semibold p-1">PART-TIME</span> <span className="text-gray-400">Salary: 15,000INR - $30,000INR</span></p>    
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 15,000INR - $30,000INR</span></p>    
 
                 <div className="flex gap-2 mt-8">
                     
@@ -144,13 +144,13 @@ const FeaturedJobs = () => {
                 <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-4 py-1 transition-transform transform hover:scale-105 hover:shadow-lg">View details</button>
 
                 <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg">Apply now</button>
-            </div> 
-
-                
+            </div>    
                 
             </div>
 
         </div>
+
+        <p className="flex justify-center mt-8 text-xl cursor-pointer text-primary underline">View all</p>
 
        </div>
   )

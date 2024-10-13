@@ -15,7 +15,8 @@ export default {
         firstColor: '#C599E5',
         secondColor: '#C599E5',
         thirdColor: '#E2CCF2',
-        fourthCOlor: '#hsla(275, 30%, 92%, 0.836)'
+        fourthCOlor: '#hsla(275, 30%, 92%, 0.836)',
+        setted: '#EFE2F8'
       }
     },
   },

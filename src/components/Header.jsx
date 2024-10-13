@@ -1,6 +1,5 @@
 import { FaSearchengin } from "react-icons/fa6";
 import { CiSearch, CiLocationOn  } from "react-icons/ci";
-import './Header.css'
 import job from '../assets/job.jpg'
 import '../index.css'
 
@@ -25,13 +24,12 @@ function Header() {
 
         <div className="space-x-4 mr-20">
             <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-6 py-3 transition-transform transform hover:scale-105 hover:shadow-lg">Contact Us</button>
-
             <button className="text-white font-bold bg-primary px-8 py-3 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg">Login</button>
         </div>
 
         </div>
        
-        <div className="">
+        <div className="bg-gradient-to-r from-blue-100 10% via-white to-white">
             
             <div className="flex justify-between">
 

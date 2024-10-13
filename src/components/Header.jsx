@@ -3,7 +3,6 @@ import { CiSearch, CiLocationOn  } from "react-icons/ci";
 import job from '../assets/job.jpg'
 import '../index.css'
 
-
 function Header() {
   return (
    <>   

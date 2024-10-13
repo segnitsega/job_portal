@@ -1,5 +1,5 @@
 import { CiLocationOn, CiBookmark  } from "react-icons/ci";
-import { siIntel, siApple, siHp} from 'simple-icons/icons';
+import { siApple, siHp} from 'simple-icons/icons';
 import '../index.css'
 import employee1 from '../assets/employee1.png';
 

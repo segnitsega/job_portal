@@ -29,7 +29,7 @@ function Header() {
 
         </div>
        
-        <div className="bg-gradient-to-r from-setted 10% via-white to-white">
+        <div className="bg-gradient-to-r from-setted via-white to-white">
             
             <div className="flex justify-between">
 

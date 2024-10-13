@@ -16,7 +16,9 @@ export default {
         secondColor: '#C599E5',
         thirdColor: '#E2CCF2',
         fourthCOlor: '#hsla(275, 30%, 92%, 0.836)',
-        setted: '#EFE2F8'
+        setted: '#EFE2F8',
+        footer: '#B781DF',
+        icons: '#B781DF'
       }
     },
   },

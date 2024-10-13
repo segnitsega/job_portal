@@ -36,7 +36,7 @@ function Header() {
             <div className="flex justify-between">
 
             <div className="pl-8 pt-20 ml-20 ">
-                <h1 className="text-5xl">Find a job that aligns with <br/> your interests and skills</h1><br/>
+                <h1 className="text-5xl leading-tight">Find a job that aligns with <br/>your interests and skills</h1><br/>
                 <p>Thousands of jobs in all the leading sectors are waiting for you.</p>
 
                 <div className="border-2 bg-white flex justify-between mt-8">
@@ -54,6 +54,7 @@ function Header() {
                     <button className="m-2 p-3 text-white w-40 rounded bg-primary hover:scale-105 hover:shadow-lg">Find Job</button>
                     
                 </div>
+                <p className="mt-4"><span className="text-gray-400">Suggestion:</span> UI/UX Designer, Programing,<span className="text-primary font-bold"> Digital Marketing,</span> Video, Animation</p>
             </div>
 
             <div>

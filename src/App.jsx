@@ -8,11 +8,11 @@ import LoginPage from "./components/LoginPage"
 function App() {
   return (
     <div>
-      <Header/>
+      {/* <Header/>
       <FeaturedJobs/>
       <TopCompanies/>
-      <Footer />
-      {/* <LoginPage/> */}
+      <Footer /> */}
+      <LoginPage/>
     </div>
   )
 }

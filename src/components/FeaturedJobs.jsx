@@ -150,7 +150,7 @@ const FeaturedJobs = () => {
 
         </div>
 
-        <p className="flex justify-center mt-8 text-xl cursor-pointer text-primary underline">View all</p>
+        <p className="flex justify-center mt-8 text-xl cursor-pointer text-primary underline hover:scale-105 ">View all</p>
 
        </div>
   )

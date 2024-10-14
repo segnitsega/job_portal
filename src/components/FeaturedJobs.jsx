@@ -115,7 +115,7 @@ const FeaturedJobs = () => {
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 15,000INR - $30,000INR</span></p>    
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 15,000INR - 30,000INR</span></p>    
 
                 <div className="flex gap-2 mt-8">
                     

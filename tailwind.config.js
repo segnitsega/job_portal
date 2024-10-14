@@ -19,6 +19,9 @@ export default {
         setted: '#EFE2F8',
         footer: '#B781DF',
         icons: '#B781DF'
+      },
+      screens:{
+        custom: '500px'
       }
     },
   },

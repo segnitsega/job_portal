@@ -15,7 +15,7 @@ const Footer = () => {
                 <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>  
             </div>
             <p className="text-gray-500 mt-8">Call now: <span className='text-primary'>+919591776078</span></p>
-            <p className="text-gray-500 mt-4">456 Hachalu Hundesa Streek,</p>
+            <p className="text-gray-500 mt-4">456 Hachalu Hundesa Street,</p>
             <p className="text-gray-500">Near Gefersa river, Burayu.</p>
             <p className="text-gray-500">Finfine 110006, Ethiopia</p>
         </div>

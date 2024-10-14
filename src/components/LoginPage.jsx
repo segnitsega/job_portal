@@ -38,26 +38,26 @@ const LoginPage = () => {
             <p className="text-gray-400">welcome back! Select te below login methods.</p>
         </div>
         
-        <div className="flex gap-32 ml-32 mr-8 mt-12 mb-16  shadow-2xl rounded-3xl w-auto">
+        <div className="flex gap-32 ml-32 mr-8 mt-12 mb-16 shadow-[0_4px_8px_rgba(0,0,0,0.3)] rounded-3xl w-auto">
 
             <div>
                 <div className="flex flex-col pl-8 pt-10">
                     <label htmlFor="email">Email ID / Username</label>
-                    <input type="text" placeholder="Email ID / Username" className="border border-gray-400 p-2 rounded-lg mr-8 w-96 px-8 py-4"/>
+                    <input type="text" placeholder="Email ID / Username" className="border border-gray-400 p-2 rounded-lg mr-8 w-96 px-8 py-4 focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                 </div>
 
                 <div className="flex flex-col pl-8 mt-10">
 
                     <label htmlFor="password">Password</label>
                     <div>
-                        <input type="text" placeholder="Enter Password" className="border border-gray-400 p-2 rounded-lg px-8 py-4 w-96"/>
+                        <input type="text" placeholder="Enter Password" className="border border-gray-400 p-2 rounded-lg px-8 py-4 w-96 focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                         <span className="-ml-14 text-primary cursor-pointer">Show</span>   
                     </div>
                 </div>
 
                     <div className="flex justify-between mt-2 ml-8 mr-8">
                         <label htmlFor="radio">
-                            <input type="radio" className=""/>
+                            <input type="checkbox" className="mr-1"/>
                             Remember me
                         </label>
                         <p className="text-primary underline">Forgot Password?</p>

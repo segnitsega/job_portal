@@ -1,3 +1,4 @@
+import '../index.css'
 import Flipkart from '../assets/Flipkart.svg'
 import Google from '../assets/Google.svg'
 import Youtube from '../assets/Youtube.svg'

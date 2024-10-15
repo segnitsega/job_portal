@@ -1,3 +1,4 @@
+import '../index.css'
 import { FaSearchengin } from "react-icons/fa6";
 import { CiSearch, CiLocationOn, CiBookmark  } from "react-icons/ci";
 import Vector from "../assets/Vector.png"
@@ -13,24 +14,24 @@ function JobSearch() {
         {/* started from the smallest screen sizes (320px) */}
         <div className="lg:flex lg:justify-between lg:p-8">
 
-            <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
-                <FaSearchengin className="text-primary text-xl cursor-pointer"/>
-                <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
+                <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
+                    <FaSearchengin className="text-primary text-xl cursor-pointer"/>
+                    <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
+                </div>
+
+            <nav className="flex space-x-3 lg:space-x-10 justify-around mt-4">
+                <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Home</p>
+                <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Find Jobs</p>
+                <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Employers</p>
+                <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">About Us</p>
+            </nav>
+
+            <div className="flex gap-4 mt-4 lg:gap-0 lg:space-x-4 lg:mt-0 lg:block lg:mr-20">
+
+                <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
+
+                <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
             </div>
-
-        <nav className="flex space-x-3 lg:space-x-10 justify-around mt-4">
-            <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Home</p>
-            <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Find Jobs</p>
-            <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Employers</p>
-            <p className="text-primary lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">About Us</p>
-        </nav>
-
-        <div className="flex gap-4 mt-4 lg:gap-0 lg:space-x-4 lg:mt-0 lg:block lg:mr-20">
-
-            <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
-
-            <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
-        </div>
 
         </div>
         
@@ -81,8 +82,8 @@ function JobSearch() {
 
   
 
-    {/* Container for the filtering and job listing */}
-    <div className="flex justify-center gap-6 lg:justify-between lg:mx-20 lg:px-8 lg:items-start">
+        {/* Container for the filtering and job listing */}
+        <div className="flex justify-center gap-6 lg:justify-between lg:mx-20 lg:px-8 lg:items-start">
 
         {/* For filtering jobs */}
         <div className="hidden md:block bg-gray-100 ml-4 rounded-lg pt-12 pl-4 pr-4 lg:mt-3 lg:ml-2">
@@ -513,10 +514,6 @@ function JobSearch() {
 
                 </div>
 
-
-                
-                {/* <p className="flex justify-center mt-2 mb-2 text-xl md:mx-32 md:mt-16 cursor-pointer text-primary underline hover:scale-105 lg:items-end">View all</p> */}
-
             </div>
 
             <div>
@@ -526,7 +523,7 @@ function JobSearch() {
         </div> 
         
 
-    </div>
+        </div>
 
 
          

@@ -3,14 +3,14 @@ import { CiSearch, CiLocationOn, CiBookmark  } from "react-icons/ci";
 import Vector from "../assets/Vector.png"
 import { siApple, siHp, siOracle, siLenovo, siIndeed} from 'simple-icons/icons';
 import employee1 from '../assets/employee1.png';
-
-
+import { IoChevronUpOutline } from "react-icons/io5";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 function JobSearch() {
   return (
     <div>
         
-        {/* for the smallest screen sizes (320px) */}
+        {/* started from the smallest screen sizes (320px) */}
 
         <diV className="flex items-center justify-center mt-4 custom:"> 
                 <FaSearchengin className="text-primary text-xl cursor-pointer"/>
@@ -26,9 +26,9 @@ function JobSearch() {
 
         <div className="flex gap-4 mt-4">
 
-            <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded">Contact Us</button>
+            <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4">Contact Us</button>
 
-            <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg">Login</button>
+            <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4">Login</button>
         </div>
 
         <h1 className="font-bold mt-8 pl-2">Job Search</h1>
@@ -38,37 +38,210 @@ function JobSearch() {
 
             <div className="flex items-center border-2 mr-16">
                 <CiSearch className="mr-2 text-gray-500 "/>
-                <input type="text" placeholder="Enter job title" className="focus: outline-none"/>
+                <input type="text" placeholder="Enter job title" className="focus: outline-none focus:ring focus:ring-blue-500"/>
             </div>
 
             <div className="flex items-center border-2 mr-16">
                 <CiLocationOn className="mr-2 text-gray-500 text-xl"/>
-                <input type="text" placeholder="Enter location" className="focus: outline-none"/>
+                <input type="text" placeholder="Enter location" className="focus: outline-none focus:ring focus:ring-blue-500"/>
             </div>
 
             <div className="flex items-center border-2 mr-16">
                 <img src={Vector} alt="" className="mr-2"/>
-                <input type="text" placeholder="Years of experience" className="focus: outline-none"/>
+                <input type="text" placeholder="Years of experience" className="focus: outline-none focus:ring focus:ring-blue-500"/>
             </div>
 
             <button className="m-1 p-1 text-white w-40 rounded bg-primary hover:scale-105 hover:shadow-lg">Search</button>
 
         </div>
 
-        <div className="flex flex-col">
+        
+  
+            <div className="flex items-center mt-8 mb-4">
+                <h1 className="hidden md:block font-bold ml-8">Filter</h1>
+                <p className="hidden md:block text-gray-400 ml-64">Clear All</p>
+                <h1 className="font-bold md: ml-4">All Jobs (2310)</h1>     
+            </div>
+        
 
+  
 
+        {/* Container for the filtering and job listin */}
+        <div className="flex justify-center gap-6">
+
+        {/* For filtering jobs */}
+        <div className="hidden md:block bg-gray-100 ml-4 rounded-lg pt-12 pl-4 pr-4">
+
+            <h1 className="font-bold">Salary Range</h1>
+
+            <div className="flex gap-4 mt-2 mb-16">
+                <input type="number" placeholder="Min" className="px-1 py-1 w-40 rounded-md outline-none focus:ring-2 focus:ring-blue-500"/>
+                <input type="number" placeholder="Max"className="px-1 py-1 w-40 rounded-md outline-none focus:ring-2 focus:ring-blue-500"/>
+            </div>
+
+            <div className="border-t border-gray-300 mx-2 my-12"></div>
+{/*  */}
+            <div className="flex justify-between">
+                <h1 className="font-bold">Job Type</h1>
+                <IoChevronUpOutline className="text-lg"/>    
+            </div>
             
+            <div className="flex flex-col">
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Full-Time (450)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Part-Time (145)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                        Internship (65)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                        Contract (12)
+                </label>
+                        
+
+            </div>
+
+            <div className="border-t border-gray-300 mx-2 my-12"></div>
+            
+
+            <div className="flex justify-between">
+                <h1 className="font-bold">Work Mode</h1>
+                <IoChevronUpOutline className="text-lg"/>    
+            </div>
+
+            <div className="flex flex-col">
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    On-Site
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Remote (180)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Hybrid (200)
+                </label>
+
+            </div>
+
+            <div className="border-t border-gray-300 mx-2 my-12"></div>
+
+
+            <div className="flex justify-between">
+                <h1 className="font-bold">Job Functions</h1>
+                <IoChevronUpOutline className="text-lg"/>    
+            </div>
+
+            <div>
+
+            <div className="flex flex-col">
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Marketing (21)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Engineering (45)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Design (71)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Sales (24)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Customer Service (109)
+                </label>
+
+                </div>
+
+            </div>
+
+            <div className="border-t border-gray-300 mx-2 my-12"></div>
+
+
+            <div className="flex justify-between">
+                <h1 className="font-bold">Experience Level</h1>
+                <IoChevronUpOutline className="text-lg"/>    
+            </div>
+
+            <div className="flex flex-col">
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Fresher/Entry-Level (265)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Junior (21)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Mid-Level (212)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Senior (12)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Lead/Managerial (24)
+                </label>
+
+                <label htmlFor="">
+                    <input type="checkbox" className="mr-2 my-4"/>
+                    Director/Executive (10)
+                </label>
+
+                </div>
+
+                <div className="flex justify-center m-4">
+                    <MdOutlineKeyboardArrowDown className="text-xl text-primary mr-2"/>    
+                    <p className="text-primary underlined">Expand all</p>
+                </div>
+                
+
+        </div>
+
+
+
+        <div className="flex flex-col md:items-end">  
+
             {/* First box in job features */}
-            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4">
+            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4 mt-0">
                 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Technical Support Specialist</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
-                <p className="mr-8"><span className="bg-green-100 rounded text-green-700 font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 20,000 INR - 25,00 INR</span></p>     
+                <p className="mr-8"><span className="bg-green-100 rounded text-green-700 font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: $20,000 - $25,000</span></p>     
                 
-
             <div className="flex items-center mt-8">
                 {/* imported google icon */}
                 <svg
@@ -105,14 +278,15 @@ function JobSearch() {
 
 
             {/* The second box of job features */}      
-            <div className="bg-setted w-auto h-auto border rounded-lg p-3 m-4">
+            <div className="bg-setted w-auto h-auto border rounded-lg p-3 m-4 -ml-">
 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Senior UI/UX Designer</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">FULL-TIME</span> <span className="text-gray-400">Salary: $30,000 - $55,000</span></p>     
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">FULL-TIME</span> <span className="text-gray-400">Salary: $30,000 - $55,000</span></p>    
+
 
                 <div className="flex mt-8 gap-2">
                         {/* imported apple icon */}
@@ -155,7 +329,7 @@ function JobSearch() {
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: 15,000INR - 30,000INR</span></p>    
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: $15,000 - $30,000</span></p>    
 
                 <div className="flex gap-2 mt-8">
                     
@@ -231,14 +405,14 @@ function JobSearch() {
             </div>
 
             {/* Fiveth job list */}
-            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4">
+            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4 md:hidden">
 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">Software Engineer</h1>
                     <CiBookmark className="text-2xl text-gray-400"/>
                 </div>
 
-                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: $50,000 - $150,000</span></p>    
+                <p className="mr-8"><span className="bg-blue-100 rounded text-primary font-semibold p-1 text-sm">PART-TIME</span> <span className="text-gray-400">Salary: $50,000 - $80,00</span></p>    
 
                 <div className="flex gap-2 mt-8">
                     
@@ -272,7 +446,7 @@ function JobSearch() {
             </div>
 
             {/* sixth job list */}
-            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4">
+            <div className="bg-setted w-auto h-auto p-3 rounded-lg m-4 md:hidden">
 
                 <div className="flex justify-between items-center mb-2">
                     <h1 className="text-lg font-medium">UI Designer</h1>
@@ -299,20 +473,25 @@ function JobSearch() {
                     </div>
                 </div>
 
-            <div className="flex gap-2 mt-8">
-                <img src={employee1} alt="Employee 1" />
-                <p>40+ applicants</p>
-            </div>
+                <div className="flex gap-2 mt-8">
+                    <img src={employee1} alt="Employee 1" />
+                    <p>40+ applicants</p>
+                </div>
 
-            <div className="flex justify-around mt-8">
-                <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-4 py-1 transition-transform transform hover:scale-105 hover:shadow-lg">View details</button>
+                <div className="flex justify-around mt-8">
+                    <button className="text-primary font-bold hover:text-white hover:bg-primary hover:border-none border-2 border-primary px-4 py-1 transition-transform transform hover:scale-105 hover:shadow-lg">View details</button>
 
-                <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg">Apply now</button>
-            </div>    
+                    <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg">Apply now</button>
+                </div>    
                 
             </div>
+        <p className="flex justify-center mt-2 mb-2 text-xl md:mx-32 md:mt-16 cursor-pointer text-primary underline hover:scale-105 ">View all</p>
 
         </div>
+
+
+        </div>
+
 
          
 

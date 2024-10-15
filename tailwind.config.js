@@ -18,9 +18,11 @@ export default {
         fourthCOlor: '#hsla(275, 30%, 92%, 0.836)',
         setted: '#EFE2F8',
         footer: '#B781DF',
-        icons: '#B781DF'
+        icons: '#B781DF',
+        clr: '#F2F2F2'
       },
       screens:{
+        small: '1000px',
         custom: '500px'
       }
     },

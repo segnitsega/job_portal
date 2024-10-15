@@ -9,10 +9,10 @@ function Header() {
 
        <div className="flex justify-between p-8"> 
 
-            <diV className="flex items-center ml-20"> 
+            <div className="flex items-center ml-20"> 
                 <FaSearchengin className="text-primary text-xl cursor-pointer"/>
                 <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
-            </diV>
+            </div>
 
         <nav className="flex space-x-10">
             <p className="hover:text-primary hover:font-bold hover:text-lg cursor-pointer">Home</p>

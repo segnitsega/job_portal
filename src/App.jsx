@@ -11,14 +11,19 @@ import PostJob from "./components/PostJob"
 function App() {
   return (
     <div>
+
       {/* <Header/>
       <FeaturedJobs/>
       <TopCompanies/>
       <Footer />
       <LoginPage/>
-      <Registration/>
-      <JobSearch/> */}
-      <PostJob />
+      <Registration/> 
+      <JobSearch/> 
+      <PostJob />   */}
+
+    <Registration/> 
+
+
     </div>
   )
 }

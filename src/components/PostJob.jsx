@@ -32,6 +32,8 @@ const PostJob = () => {
 
         </div>
 
+        {/* PostJob Page */}
+
         <h1 className="font-bold mt-4 ml-4 lg:ml-20 lg:pl-8 lg:text-4xl">Post a job</h1>
         <p className="text-gray-500 text-sm ml-4 lg:ml-20 lg:pl-8">Find the best talents for your company</p>
         
@@ -43,7 +45,7 @@ const PostJob = () => {
                 <input type="text" placeholder="Add job, role vacancies etc" className="border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 px-2 lg:py-4"/>
             </div>
 
-            <div className="lg:flex gap-2 w-full">
+            <div className="lg:flex  gap-2 w-full">
 
                 <div className="flex flex-col mt-4 mx-4 lg:mx-0">
                     <label htmlFor="text" className="lg:text-2xl lg:my-2">Tags</label>

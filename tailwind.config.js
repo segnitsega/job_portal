@@ -23,7 +23,7 @@ export default {
       },
       screens:{
         small: '1000px',
-        custom: '500px'
+        custom: '320px'
       }
     },
   },

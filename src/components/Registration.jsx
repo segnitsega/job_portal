@@ -10,8 +10,8 @@ function Registration() {
   return (
     <div>
         
-        {/* started from the smallest screen sizes (320px) */}
-        <div className="lg:flex lg:justify-between lg:p-8">
+         {/* started from the smallest screen sizes (320px) */}
+         <div className="lg:flex lg:justify-between lg:p-8">
 
             <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
                 <FaSearchengin className="text-primary text-xl cursor-pointer"/>

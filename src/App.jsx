@@ -12,16 +12,16 @@ function App() {
   return (
     <div>
 
-      {/* <Header/>
-      <FeaturedJobs/>
+      <Header/>
+      {/* <FeaturedJobs/>
       <TopCompanies/>
-      <Footer />
-      <LoginPage/>
+      <Footer /> */}
+
+       {/* <LoginPage/>
       <Registration/> 
       <JobSearch/> 
       <PostJob />   */}
 
-        <LoginPage/>
 
 
     </div>

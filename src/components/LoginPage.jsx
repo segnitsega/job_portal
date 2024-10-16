@@ -49,17 +49,20 @@ const LoginPage = () => {
 
                 <div className="flex flex-col lg:pl-8 lg:pt-10">
                     <label htmlFor="email">Email ID / Username</label>
-                    <input type="text" placeholder="Email ID / Username" className="border border-gray-400 p-2 rounded-lg lg:mr-8 lg:w-96 lg:px-8 lg:py-4 focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
+                    <input type="text" placeholder="Email ID / Username" className="border border-gray-400 p-2 w-56  rounded-lg lg:mr-8 lg:w-96 lg:px-8 lg:py-4 focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
                 </div>
 
-                <div className="flex flex-col lg:pl-8 lg:mt-10">
-
-                    <label htmlFor="password">Password</label>
-                    <div className="custom:flex custom:items-center">
-                        <input type="text" placeholder="Enter Password" className="border border-gray-400 p-2 rounded-lg lg:px-8 lg:py-4 lg:w-96 focus:ring-2 focus:ring-blue-500 focus:outline-none "/>
-                        <span className="-ml-16 lg:-ml-14 text-primary cursor-pointer">Show</span>   
-                    </div>
+                <div className="flex flex-col">
+                    <label htmlFor="password" className="lg:pl-8">Password</label>                 
+                        <div className="flex items-center lg:pl-8 lg:">  
+                            <input type="text" placeholder="Password" className="border border-gray-400 p-2 w-60 rounded-lg lg:mr-8 lg:w-96 lg:px-8 lg:py-4 focus:ring-2 focus:ring-blue-500 focus:outline-none"/>
+                            <span className="-ml-14 lg:-ml-24 text-primary cursor-pointer">Show</span>
+                        </div>
+                       
+                    
                 </div>
+                    
+               
 
                     <div className="flex justify-between custom:gap-12 custom:text-sm mt-2 lg:ml-8 lg:mr-8">
                         <label htmlFor="radio" className="custom:flex custom:items-center">

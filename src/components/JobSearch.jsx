@@ -11,29 +11,29 @@ function JobSearch() {
   return (
     <div>
         
-        {/* started from the smallest screen sizes (320px) */}
-        <div className="lg:flex lg:justify-between lg:p-8">
+         {/* started from the smallest screen sizes (320px) */}
+         <div className="lg:flex lg:justify-between lg:p-8">
 
-            <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
-                <FaSearchengin className="text-primary text-xl cursor-pointer"/>
-                <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
-            </div>
+<div className="flex items-center justify-center mt-4 lg:ml-20 "> 
+    <FaSearchengin className="text-primary text-xl cursor-pointer"/>
+    <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
+</div>
 
-            <nav className="flex space-x-3 lg:space-x-10 justify-around mt-4">
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Home</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Find Jobs</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Employers</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">About Us</p>
-            </nav>
+<nav className="hidden lg:flex space-x-3 lg:space-x-10 justify-around mt-4">
+    <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Home</p>
+    <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Find Jobs</p>
+    <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Employers</p>
+    <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">About Us</p>
+</nav>
 
-            <div className="flex gap-4 mt-4 lg:gap-0 lg:space-x-4 lg:mt-0 lg:block lg:mr-20">
+<div className="hidden lg:flex gap-4 mt-4 lg:gap-0 lg:space-x-4 lg:mt-0 lg:mr-20">
 
-                <button className="text-primary font-bold hover:text-white ml-4 hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
+    <button className="text-primary font-bold hover:text-white ml-4 hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
 
-                <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
-            </div>
+    <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
+</div>
 
-        </div>
+</div>
         
 
 

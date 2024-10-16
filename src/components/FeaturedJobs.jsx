@@ -5,14 +5,14 @@ import employee1 from '../assets/employee1.png';
 
 const FeaturedJobs = () => {
   return (
-    <div className="mt-32 mb-32">
+    <div className="my-16 lg:my-32">
 
         <div className="flex flex-col items-center">
-            <h1 className="font-bold text-5xl">Featured Jobs</h1>
-            <p className="text-gray-400 text-2xl mt-4">Choose jobs from the top employers and apply for the same.</p>
+            <h1 className="font-bold text-lg lg:text-5xl">Featured Jobs</h1>
+            <p className="text-gray-400 text-sm custom:mx-2 lg:text-2xl lg:mt-4">Choose jobs from the top employers and apply for the same.</p>
         </div>
        
-        <div className="flex justify-center gap-10 mt-10">
+        <div className="flex flex-col lg:flex-row custom:mx-4 lg:justify-center gap-10 mt-10">
 
             {/* First box in job features */}
             <div className="bg-setted w-auto h-auto p-3 rounded-lg">

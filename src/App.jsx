@@ -13,9 +13,9 @@ function App() {
     <div>
 
       <Header/>
-      {/* <FeaturedJobs/>
+      <FeaturedJobs/>
       <TopCompanies/>
-      <Footer /> */}
+      <Footer />
 
        {/* <LoginPage/>
       <Registration/> 

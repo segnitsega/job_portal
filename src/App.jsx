@@ -21,7 +21,7 @@ function App() {
       <JobSearch/> 
       <PostJob />   */}
 
-    <Registration/> 
+        <LoginPage/>
 
 
     </div>

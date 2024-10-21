@@ -8,7 +8,7 @@ const PostJob = () => {
     <div>
 
 
-        {/* started from the smallest screen sizes (320px) */}
+        {/* started from the smallest screen sizes (320px)
         <div className="lg:flex lg:justify-between lg:p-8">
 
             <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
@@ -30,7 +30,7 @@ const PostJob = () => {
                 <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
             </div>
 
-        </div>
+        </div> */}
 
         {/* PostJob Page */}
 

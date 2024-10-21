@@ -1,40 +1,13 @@
-import { FaSearchengin } from "react-icons/fa6";
 import '../index.css'
 import sitting from "../assets/sitting.png"
 import google from "../assets/google.png"
 import fb from "../assets/fb.png"
 import linkedIn from "../assets/linkedIn.png"
-
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
 
 const LoginPage = () => {
   return (
     <div>
-        
-        {/* started from the smallest screen sizes (320px) */}
-        <div className="lg:flex lg:justify-between lg:p-8">
-
-            <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
-                <FaSearchengin className="text-primary text-xl cursor-pointer"/>
-                <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
-            </div>
-
-            <nav className="hidden lg:flex space-x-3 lg:space-x-10 justify-around mt-4">
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Home</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Find Jobs</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">Employers</p>
-                <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer">About Us</p>
-            </nav>
-
-            <div className="hidden lg:flex gap-4 mt-4 lg:gap-0 lg:space-x-4 lg:mt-0 lg:mr-20">
-
-                <button className="text-primary font-bold hover:text-white ml-4 hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
-
-                <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3">Login</button>
-            </div>
-
-        </div>
-
-
 
      {/* The Login Page */}
    
@@ -66,7 +39,7 @@ const LoginPage = () => {
 
                     <div className="flex justify-between custom:gap-12 custom:text-sm mt-2 lg:ml-8 lg:mr-8">
                         <label htmlFor="radio" className="custom:flex custom:items-center">
-                            <input type="checkbox" className="mr-1"/>
+                            <input type="checkbox" id="radio" className="mr-1"/>
                             Remember me
                         </label>
                         <p className="text-primary underline">Forgot Password?</p>
@@ -87,7 +60,7 @@ const LoginPage = () => {
                     </div>
                                 
 
-                    <p className="lg:ml-16 lg:mt-16 lg:pb-8 ">Don't have an account?<span className="underline text-primary cursor-pointer"> Register</span></p>
+                    <p className="lg:ml-16 lg:mt-16 lg:pb-8 ">Don't have an account?<span className="underline text-primary cursor-pointer"> <NavLink to="./Registration.jsx">Register</NavLink></span></p>
 
             </div> 
 

@@ -6,25 +6,52 @@ import LoginPage from "./components/LoginPage"
 import Registration from "./components/Registration"
 import JobSearch from "./components/JobSearch"
 import PostJob from "./components/PostJob"
-
+import NavBar from "./components/NavBar"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
+    <Router>
+      <div>
+        <NavBar/>
+        
+        <Switch>
 
-      <Header/>
-      <FeaturedJobs/>
-      <TopCompanies/>
-      <Footer />
+          <Route exact path="/">
+            <Header/>
+            <FeaturedJobs/>
+            <TopCompanies />
+            <Footer/>
+          </Route>
 
-       {/* <LoginPage/>
-      <Registration/> 
-      <JobSearch/> 
-      <PostJob />   */}
+          <Route exact path="/Header.jsx">
+            <Header/>
+            <FeaturedJobs/>
+            <TopCompanies />
+            <Footer/>
+          </Route>
 
+          <Route path="/JobSearch.jsx">
+            <JobSearch/>
+          </Route>
 
+          <Route path="/PostJob.jsx">
+            <PostJob/>
+          </Route>
 
-    </div>
+          <Route path="/LoginPage.jsx">
+            <LoginPage/>
+          </Route>
+
+          <Route path="/Registration.jsx">
+            <Registration />
+          </Route>
+
+        </Switch>
+
+      </div>
+    </Router>
+    
   )
 }
 

@@ -1,7 +1,18 @@
 import { FaSearchengin } from 'react-icons/fa6'
 import { NavLink } from "react-router-dom"
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from 'react';
+
+
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleMenu = () => {
+      setIsOpen(!isOpen)
+  }
+
   return (
+
     <div>
       {/* started from the smallest screen sizes (320px) */}
         <div className="lg:flex lg:justify-between lg:p-8">
@@ -9,7 +20,21 @@ function NavBar() {
             <div className="flex items-center justify-center mt-4 lg:ml-20 "> 
                 <FaSearchengin className="text-primary text-xl cursor-pointer"/>
                 <p className="text-primary font-bold text-xl cursor-pointer">AlwaysApply</p>
+                
             </div>
+
+            <div className='sm:hidden'> 
+              <div onClick={toggleMenu}>
+                <RxHamburgerMenu className='text-primary ml-2 cursor-pointer'/>
+              </div>  
+              <nav className={`text-lg ml-2 mt-2 ${isOpen ? 'block' : 'hidden'}`}>
+                <p onClick={toggleMenu}><NavLink to="./Header.jsx" >Home</NavLink></p>
+                <p onClick={toggleMenu}><NavLink to="./JobSearch.jsx">Find Jobs</NavLink></p>
+                <p onClick={toggleMenu}><NavLink to="./PostJob.jsx">Employers</NavLink></p>
+                <p>About us</p>
+              </nav>
+            </div>
+
 
             <nav className="hidden lg:flex space-x-3 lg:space-x-10 justify-around mt-4">
                 <p className="active:text-primary active:font-bold lg:text-black lg:hover:text-primary lg:hover:font-bold lg:hover:text-lg cursor-pointer"><NavLink to="./Header.jsx" >Home</NavLink> </p>

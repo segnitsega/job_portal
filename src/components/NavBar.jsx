@@ -47,7 +47,7 @@ function NavBar() {
 
                 <button className="text-primary font-bold hover:text-white ml-4 hover:bg-primary hover:border-none border-2 border-primary px-1 py-1 transition-transform transform hover:scale-105 hover:shadow-lg rounded md:ml-4 lg:px-6 lg:py-3">Contact Us</button>
 
-                <button className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3"> <NavLink to="./LoginPage.jsx">Login</NavLink> </button>
+                <button id='login' className="text-white font-bold bg-primary px-4 py-1 hover:bg-primary rounded transition-transform transform hover:scale-105 hover:shadow-lg md:ml-4 lg:px-8 lg:py-3"> <NavLink to="./LoginPage.jsx">Login</NavLink> </button>
             </div>
 
         </div>

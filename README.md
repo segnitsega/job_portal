@@ -27,7 +27,7 @@ The **Job Portal Web App UI** project is designed to simulate a job-searching ex
 
 ## Demo
 
-A live demo of the project is hosted on [https://alwaysapply.netlify.app/](#), where you can view the responsiveness and interactive features.
+A live demo of the project is hosted on [https://alwaysapply.netlify.app/], where you can view the responsiveness and interactive features.
 
 ## Technologies Used
 

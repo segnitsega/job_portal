@@ -59,7 +59,7 @@ To run this project locally:
 Once the development server is running, you can view the application in your browser at http://localhost:3000. Use the navigation bar to explore the mock job listings, filter options, and job details.
 
 ## Project Structure
-    ```bash
+    
             job_portal/
             ├── public/
             │   ├── _redirects

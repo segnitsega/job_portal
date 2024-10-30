@@ -12,7 +12,6 @@ This is a frontend-only, non-functional job portal web app built with **React** 
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 

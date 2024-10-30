@@ -34,3 +34,27 @@ A live demo of the project is hosted on [https://alwaysapply.netlify.app/], wher
 - **React**: JavaScript library for building user interfaces.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **React Router**: For page navigation and route management.
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/segnitsega/job_portal.git
+2. Navigate to the project directory:
+    ```bash
+    cd job_portal
+3. Install dependencies:
+    ```bash
+    npm install,  or
+    yarn install
+4. Start the development server:
+    ```bash
+    npm start, or
+    yarn start
+
+##Usage
+
+Once the development server is running, you can view the application in your browser at http://localhost:3000. Use the navigation bar to explore the mock job listings, filter options, and job details.
+

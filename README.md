@@ -47,14 +47,14 @@ To run this project locally:
     cd job_portal
 3. Install dependencies:
     ```bash
-    npm install,  or
+    npm install
     yarn install
 4. Start the development server:
     ```bash
-    npm start, or
+    npm start
     yarn start
 
-##Usage
+## Usage
 
 Once the development server is running, you can view the application in your browser at http://localhost:3000. Use the navigation bar to explore the mock job listings, filter options, and job details.
 
